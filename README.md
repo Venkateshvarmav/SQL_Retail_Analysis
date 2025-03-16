@@ -17,9 +17,9 @@ This project is designed to demonstrate SQL skills and techniques typically to e
 * **Database Creation**: The project starts by creating a database namesd retail_analysis
 * **Table Creation**: A table named retail_anlaysis is created to store the sales dataset. The table structure includes columns for transaction ID(ID), sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
-'''sql
+```sql
 create database retail_analysis;
-'''
+```
 drop table if exists retail_analysis;
 
 create table retail_analysis (
