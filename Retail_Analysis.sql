@@ -150,7 +150,7 @@ GROUP BY 1;
 SELECT 
     CASE
         WHEN HOUR(sale_time) < 12 THEN 'Morning'
-        WHEN HOUR(sale_time) BETWEEN 12 AND 17 THEN 'Afternoon'
+        WHEN HOUR(sale_time) >= 12 AND HOUR(sale_time) < 17 THEN 'Afternoon'
         ELSE 'Evening'
     END AS Shifts,
     COUNT(*) as Number_Of_Orders
